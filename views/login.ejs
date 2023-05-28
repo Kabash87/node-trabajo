@@ -1,0 +1,31 @@
+<%- include('_header') %>
+    <br />
+  <br/><br/>
+    <center>
+      <h3><%=__('Log In') %></h3>
+      <p><%=__('Enter your Email and Password to continue') %></p>
+      <br />
+      <form method="POST" action="/auth">
+        <label for="username"><%=__('Email :') %></label>
+        <input
+          type="text"
+          placeholder="<%=__('Email') %>"
+          name="username"
+          class="username"
+          required
+        />
+        <label for="password"><%=__('Password: ') %></label>
+        <input
+          type="password"
+          name="password"
+          class="password"
+          placeholder="<%=__('Password') %>"
+          required
+        /><br>
+        <button type="submit"><%=__('Enter') %></button>
+      </form>
+      <br /><br />
+      <a href="/"><%=__('Back to Home') %></a>
+    </center>
+  
+</html>
